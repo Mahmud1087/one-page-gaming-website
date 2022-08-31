@@ -10,3 +10,6 @@ This project is a one page website practice project with some random images and 
 * swiperjs.com for the slider effect
 
 
+## You can view the live webpage here:
+
+https://gamingwebpage.netlify.app/
