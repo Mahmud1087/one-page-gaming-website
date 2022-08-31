@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Link for font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Gaming Website</title>    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 80%;
+      }
+
+      body {
+        background: black;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 95%;
+        height: 50%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #1b1b1b;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .swiper-button-next, .swiper-button-prev {
+        color: red;
+      }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar p-3 bg-black shadow-xl">
+
+        <!-- Navbar Container -->
+        <div class="container mx-auto px-4 relative flex justify-between items-center">
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#"><img src="images/logo1.jpg" style="width: 100px; height: 50px;"></a>
+            </div>
+
+            <!-- Menu items -->
+            <div class="nav text-white absolute hidden flex-col space-y-4 items-center top-16 w-full bg-black py-5 left-0 rounded-xl justify-center md:flex md:flex-row md:space-y-0 md:top-3 md:bg-transparent md:py-0">
+                <a href="#game" class="list mx-5 hover:text-red-500">Game</a>
+                <a href="#upcoming" class="list mx-5 hover:text-red-500">Upcoming Games</a>
+                <a href="#community" class="list mx-5 hover:text-red-500">Review</a>
+                <a href="#support" class="list mx-5 hover:text-red-500">Support</a>
+            </div>
+
+            <!-- Free Download button -->
+            <button class="download text-white border-2 border-textColor p-2 px-5 rounded-md hidden md:flex hover:bg-textColor">Free Download</button>
+
+            <!-- Hamburger menu button -->
+            <button id="btn" class="hamburger block md:hidden">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Main Section -->
+    <section id="game" class="p-3 bg-bkgd">
+
+        <!-- Section container -->
+        <div class="container text-start mx-auto p-3">
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="upcoming" class="bg-black overflow-hidden pb-5">
+
+        <!-- Section header -->
+        <div class="container mx-auto p-3">
+            <div class="header flex justify-between items-center">
+                <h2 class="text-white text-2xl font-mono">Upcoming Games</h2>
+                <button class="px-4 py-1 border-2 border-textColor text-white rounded hover:bg-textColor">VIEW ALL</button>
+            </div>
+        </div>
+
+        <!-- Section main contents -->
+        <div class="container mx-auto space-y-4 flex flex-col justify-center lg:bg-bgColor2 lg:flex-row lg:space-y-0 lg:space-x-9">
+
+            <!-- First Section -->
+            <div class="first lg:w-1/2">
+                <div class="image h-full w-full">
+                    <img src="images/img13.jpeg" class="h-full w-full">
+                </div>
+            </div>
+            
+            <!-- Second section -->
+            <div class="second lg:w-1/2 bg-bgColor2">
+                <div class="container2 flex flex-col sm:flex-row lg:flex-col">
+
+                    <div class="left mx-4 lg:mx-0">
+                        <div class="box py-5 px-3 border-y-2 border-color3 shadow">
+                            <h2 class="text-gray-300 font-bold text-sm">
+                                FORTRESS UPDATE [1-5]: ATTACK OF THE PACK!
+                            </h2>
+                            <p class="font-bold text-gray-500 text-xs mt-2">AUGUST 27, 2022</p>
+                        </div>
+                        
+                        <div class="box py-5 px-3 border-b-2 border-color3 shadow">
+                            <h2 class="text-gray-300 font-bold text-sm">
+                                WOLF HERO LORE: DESTRUCTION OF THE TEMPLE
+                            </h2>
+                            <p class="font-bold text-gray-500 text-xs mt-2">AUGUST 20, 2022</p>
+                        </div>
+                        
+                        <div class="box py-5 px-3 border-b-2 border-color3 shadow">
+                            <h2 class="text-gray-300 font-bold text-sm">
+                                FREE HERO ROTATION: CELESTE, TAKA..
+                            </h2>
+                            <p class="font-bold text-gray-500 text-xs mt-2">SEPTEMBER 2, 2022</p>
+                        </div>
+                    </div>
+                    
+                    <div class="right mx-4 lg:mx-0">
+                        <div class="box py-5 px-3 border-y-2 lg:border-t-0 shadow border-color3">
+                            <h2 class="text-gray-300 font-bold text-sm">
+                                'STORMLORD ARDAN' SKIN REVEAL!
+                            </h2>
+                            <p class="font-bold text-gray-500 text-xs mt-2">SEPTEMBER 7, 2022</p>
+                        </div>
+                        
+                        <div class="box py-5 px-3 border-b-2 border-color3 shadow">
+                            <h2 class="text-gray-300 font-bold text-sm">
+                                NEW HERO LORE: 'A STORY FOR EVERYTHING'
+                            </h2>
+                            <p class="font-bold text-gray-500 text-xs mt-2">SEPTEMBER 12, 2022</p>
+                        </div>
+                        
+                        <div class="box py-5 px-3 border-b-2 border-color3 shadow">
+                            <h2 class="text-gray-300 font-bold text-sm">
+                                FREE HERO ROTATION [1-9]: TRY THE JOULE NOW!
+                            </h2>
+                            <p class="font-bold text-gray-500 text-xs mt-2">SEPTEMBER 20 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Slides Slides -->
+    <div class="container mx-auto swiper mySwiper mb-5">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/img9.jpeg"></div>
+            <div class="swiper-slide"><img src="images/img10.jpeg"></div>
+            <div class="swiper-slide"><img src="images/img11.jpeg"></div>
+            <div class="swiper-slide"><img src="images/img12.jpeg"></div>
+            <div class="swiper-slide"><img src="images/img13.jpeg"></div>
+            <div class="swiper-slide"><img src="images/img14.jpeg"></div>
+            <div class="swiper-slide"><img src="images/img15.jpeg"></div>
+            <div class="swiper-slide"><img src="images/img8.jpeg"></div>
+            <div class="swiper-slide"><img src="images/bg.jpg"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    
+    <!-- Review Section -->
+    <section id="community" class="bg-black overflow-hidden my-20 border border-y-red-600 pb-3">
+
+        <!-- Section header -->
+        <div class="container mx-auto p-3">
+            <div class="header flex justify-between items-center">
+                <h2 class="text-white text-2xl font-mono">This Week's Review</h2>
+            </div>
+        </div>
+
+        <!-- Section main contents -->
+        <div class="container mx-auto space-y-4 flex flex-col-reverse justify-center lg:flex-row lg:space-y-0 lg:space-x-9">
+            
+            <!-- First section -->
+            <div class="first lg:w-1/2 p-10 flex flex-col-reverse justify-center items-center lg:flex-col">
+                <div class="imge h-20 w-20 mb-8 lg:mb-0">
+                    <img src="images/img4.jpeg" class="h-full w-full rounded-full">
+                </div>
+
+                <div class="texts my-8">
+                    <p class="text-lg text-gray-300 text-center w-3/4 mx-auto md:w-full">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum soluta minima harum aspernatur vitae aut excepturi dignissimos mollitia porro numquam?
+                    </p>
+                    <h2 class="text-md text-red-500 text-end mt-8">
+                        - HARVEY SPECTER
+                    </h2>
+                </div>
+                
+            </div>
+            
+            <!-- Second Section -->
+            <div class="second lg:w-1/2">
+                <div class="image h-full w-full">
+                    <img src="images/img15.jpeg" class="h-full w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 15,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <!-- Link to javascript -->
+    <script src="script.js"></script>
+</body>
+</html>
